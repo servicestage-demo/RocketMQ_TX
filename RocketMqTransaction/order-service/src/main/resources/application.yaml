@@ -1,0 +1,23 @@
+server:
+  port: 8903
+spring:
+  application:
+    name: order
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    bank:
+      username: root
+      password: 940909
+      url: jdbc:mysql://127.0.0.1:3306/orders?verifyServerCertificate=false&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      driver-class-name: com.mysql.cj.jdbc.Driver
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    prefer-ip-address: true
+rocketmq:
+  name-server: http://127.0.0.1:9876
+  producer:
+    group: rocket-mq

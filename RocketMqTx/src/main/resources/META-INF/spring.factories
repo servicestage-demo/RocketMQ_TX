@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.huawei.middleware.rocketMq.RocketMqConfig

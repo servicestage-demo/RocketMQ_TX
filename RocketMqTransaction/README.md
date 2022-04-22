@@ -1,0 +1,3 @@
+
+CREATE DATABASE inventory;
+CREATE DATABASE orders;
