@@ -2,6 +2,7 @@
 提供了两个注解
 - @RocketMqTxSaga(identifier = "", txGroup = "", topicCommit = "",topicRollback = "", checkMethod = "", cancelMethod = "")
 注解在produce的事务方法上
+
 identifier: 唯一标识 
 
 txGroup: 生产者的topic设置
