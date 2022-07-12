@@ -3,11 +3,16 @@
 - @RocketMqTxSaga(identifier = "", txGroup = "", topicCommit = "",topicRollback = "", checkMethod = "", cancelMethod = "")
 注解在produce的事务方法上
 identifier: 唯一标识 
+
 txGroup: 生产者的topic设置
+
 topicCommit: 正向提交时, producer发送消息、consumer监听消息的topic
+
 topicRollback: 出现异常情况下, 需要执行回滚方法, producer发送消息、consumer监听消息的topic
+
 checkMethod: 校验生产者方法是否执行成功
-cancelMethod: 出现
+
+cancelMethod: 出现异常情况下，执行的回滚方法
 
 - @RocketMqTxConsumer(identifier = "", txGroup = "", topicCommit = "", topicRollback = "")
 注解在consumer的事务方法上
